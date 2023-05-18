@@ -397,15 +397,23 @@ textarea {
     Top Navigation
 ============= */
 .topnavigation {
-  color: #323632;
+  background-color: #323632;
 }
 
 /* =============
     Hero
 ============= */
+.hero img {
+  display: block;
+}
+
 /* =============
     Product Stripe
 ============= */
+.productstripe {
+  background-color: #323632;
+}
+
 /* =============
     Product
 ============= */
