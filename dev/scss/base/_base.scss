@@ -3,11 +3,14 @@
 ============= */
 
 .large-images{
+
     width:100%;
     display: block;
+
 }
 
 .container{
+
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: 
@@ -23,6 +26,13 @@
     
     .content{
         grid-area:content;
+        
     }
+}
+
+body{
+
+    background-color: $beige;
+    color: $dark-green;
 
 }

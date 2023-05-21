@@ -1,3 +1,15 @@
 /* =============
     Highlights Card
 ============= */
+
+.highlights-card{
+
+    ul.cards{
+
+        background-color: $dark-green;
+        color: $beige;
+        margin: 25px;
+        list-style:none;
+        padding-left: 0;
+    }
+}

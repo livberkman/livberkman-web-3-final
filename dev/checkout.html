@@ -5,14 +5,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Starting Template</title>
   </head>
 
   <body>
 
-    <h1>Hello World!</h1> 
+    <!-- Top Navigation -->
+    <section class="topnavigation">
+      <div class="content">
+    
+        <img src="../img/icons/hamburger.svg" alt="hamburger icon">
+        <img src="../img/icons/logo.svg" alt="logo">
+        <img src="../img/icons/search-icon.svg" alt="search icon">
+        <img src="../img/icons/account-icon.svg" alt="account icon">
+        <img src="../img/icons/cart-icon.svg" alt="cart icon">
+    
+      </div>
+    </section>
+    
+    <!-- Title -->
+    <section class="container">
+      <div class="content">
+        <h2>Checkout</h2>
+      </div>
+    </section>
 
-    <script src="js/scripts-min.js"></script>
+    <!-- Shopping Cart Card -->
+    <section class="shoppingcartcard">
+      <div class="content">
+
+        <h3>Shopping Cart</h3>
+
+        <div>
+          <h4>Product</h4>
+          <h4>Qty</h4>
+          <h4>Price</h4>
+        </div>
+
+        <div>
+          <h5>Tapered Dovetail Saw</h5>
+          <h5>1</h5>
+          <h5>$175.00</h5>
+        </div>
+
+        <div>
+          <h4>Subtotal</h4>
+          <h4>$175.00</h4>
+        </div>
+
+        <div>
+          <h4>Shipping</h4>
+          <h4>-</h4>
+        </div>
+
+        <div>
+          <h4>Total</h4>
+          <h4>$175.00</h4>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Payment -->
+    <section class="container">
+      <div class="content">
+
+        <h3>Payment</h3>
+
+        <div>
+          <button>Visa / Mastercard / Amex</button>
+          <button>Paypal</button>
+        </div>
+
+        <div>
+          <h4>Card</h4>
+          <form action="#">
+            <input type="text" placeholder="Name on Card">
+            <input type="text" placeholder="Card Number">
+            <input type="text" placeholder="Exp. Month">
+            <input type="text" placeholder="Exp. Year">
+            <input type="text" placeholder="CVC">
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Delivery -->
+    <section class="container">
+      <div class="content">
+  
+        <h3>Delivery</h3>
+  
+        <div>
+          <h4>Contact Information</h4>
+          <form action="#">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Phone (optional)">
+          </form>
+        </div>
+
+        <div>
+          <h4>Shipping Address</h4>
+          <form action="#">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Company (optional)">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="Address Line 1">
+          </form>
+        </div>
+
+        <div>
+          <button>Same as Billing Address</button>
+        </div>
+  
+      </div>
+    </section>
+
+    <!-- Method -->
+    <section class="container">
+      <div class="content">
+
+        <h3>Method / Est. Arrival / Cost</h3>
+
+        <div>
+          <button>Standard / 4 - 7 Days / Free</button>
+          <button>Express / 2 -4 Days / $5.00</button>
+        </div>
+
+        <div>
+          <button>Place Order</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content">
+
+        <div>
+          <h4>1995 - 2023 Lie-Nielsen Toolworks | Privacy Policy</h4>
+          <h5>Heirloom Quality Tools</h5>
+        </div>
+
+        <div>
+          <img src="../img/icons/instagram-icon.svg" alt="instagram logo">
+          <img src="../img/icons/twitter-icon.svg" alt="twitter logo">
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="../js/scripts-min.js"></script>
   </body>
 </html>

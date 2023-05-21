@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Lie Nielsen</title>
   </head>
 
@@ -17,7 +17,8 @@
     <!-- Top Navigation -->
     <section class="topnavigation">
       <div class="content">
-        
+
+        <img src="img/icons/hamburger.svg" alt="hamburger icon">
         <img src="img/icons/logo.svg" alt="logo">
         <img src="img/icons/search-icon.svg" alt="search icon">
         <img src="img/icons/account-icon.svg" alt="account icon">
@@ -43,7 +44,7 @@
     </section>
 
     <!-- Product -->
-    <section class="container">
+    <section class="product">
       <div class="content">
 
         <div>
@@ -52,7 +53,7 @@
           <h2>$175.00</h2>
         </div>
 
-        <div>
+        <div class="sawselections">
           <button>Tapered Carcass</button>
           <button>Tapered Tenon</button>
           <button>Tapered Dovetail</button>
@@ -67,25 +68,37 @@
     </section>
 
     <!-- Highlights Card -->
-    <section class="container">
-      <div class="content">
+    <section class="highlights-card">
+      <ul class="cards">
 
-        <div>
-          <img src="img/card-images/materials-card-image.jpg" alt="tools being used">
-          <h1>Prime Materials</h1>
-        </div>
+        <li class="card-1">
+          <div class="container">
+            <div class="content">
+              <img class="large-images" src="img/card-images/materials-card-image.jpg" alt="tools being used">
+              <h1>Prime Materials</h1>
+            </div>
+          </div>
+        </li>
 
-        <div>
-          <img src="img/card-images/customer-service-card-image.jpg" alt="company photo">
-          <h1>Excellent Customer Service</h1>
-        </div>
+        <li class="card-2">
+          <div class="container">
+            <div class="content">
+              <img class="large-images" src="img/card-images/customer-service-card-image.jpg" alt="company photo">
+              <h1>Excellent Customer Service</h1>
+            </div>
+          </div>
+        </li>
 
-        <div>
-          <img src="img/card-images/made-in-the-us-card-image.jpg" alt="man working">
-          <h1>Prime Materials</h1>
-        </div>
+        <li class="card-3">
+          <div class="container">
+            <div class="content">
+              <img class="large-images" src="img/card-images/made-in-the-us-card-image.jpg" alt="man working">
+              <h1>Prime Materials</h1>
+            </div>
+          </div>
+        </li>
 
-      </div>
+      </ul>
     </section>
 
     <!-- Details -->
@@ -99,7 +112,7 @@
           slightly above the line on the back side, which reduces the risk of sawing past 
           your line. In addition, the taper introduces an angled approach to your stock 
           (when holding the saw back parallel to the bench), enabling faster cuts with 
-          less effort. 
+          less effort.
           The cutting depth is 1-3/8" at the toe and 1-5/8" at the heel.
           The saw plate is .015" thick.
           Teeth are filed rip, 15 ppi, set at .003" per side.
@@ -111,7 +124,7 @@
     </section>
 
     <!-- Gallery -->
-    <section class="container">
+    <section class="gallery">
       <div class="content">
 
         <div>
@@ -144,11 +157,14 @@
       </div>
     </section>
 
-    <!-- Customer Review Card -->
-    <section class="container">
+    <!-- Customer Review -->
+    <section class="customerreview">
       <div class="content">
 
         <h2>Customer Reviews</h2>
+        <img src="img/card-images/review-star-mobile.svg" alt="stars">
+        <h3>2,115 Ratings</h3>
+        <img src="img/card-images/review-card-chart-mobile.svg" alt="star chart">
 
       </div>
     </section>
@@ -195,8 +211,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="content">
-      <div class="container">
+    <footer class="footer">
+      <div class="content">
 
         <div>
           <h4>1995 - 2023 Lie-Nielsen Toolworks | Privacy Policy</h4>
