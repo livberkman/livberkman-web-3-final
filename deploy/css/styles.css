@@ -347,7 +347,6 @@ template {
 }
 
 body {
-  background-color: #E2DCCF;
   color: #323632;
 }
 
@@ -408,9 +407,20 @@ textarea {
 ============= */
 .topnavigation {
   background-color: #323632;
+  list-style-type: none;
 }
-.topnavigation div {
-  padding: 15px;
+
+li {
+  display: inline-block;
+}
+
+.logo {
+  width: 50px;
+}
+
+.icons {
+  float: right;
+  padding: 5px;
 }
 
 /* =============
@@ -437,30 +447,56 @@ textarea {
 .product {
   background-color: #7F8570;
   color: #E2DCCF;
-  padding: 15px;
+  padding: 20px;
+}
+.product img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product h2 {
+  padding: 10px;
 }
 
-button {
+.addtocart button {
   background-color: #874D3A;
   color: #E2DCCF;
   border-style: none;
+  text-transform: uppercase;
 }
 
 .sawselections button {
+  color: #E2DCCF;
   background-color: #7F8570;
+  font-size: 22px;
+  text-align: center;
   border-style: solid;
   border-color: #E2DCCF;
+  border-radius: 10px;
+  border-width: 5px;
 }
 
 /* =============
     Highlights Card
 ============= */
+@media (min-width: 768px) {
+  .highlights-card {
+    margin: 30px 0 40px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .highlights-card {
+    margin: 50px 0 60px 0;
+  }
+}
 .highlights-card ul.cards {
-  background-color: #323632;
-  color: #E2DCCF;
-  margin: 25px;
   list-style: none;
   padding-left: 0;
+  grid-template-columns: 100%;
+  gap: 15px;
+}
+.highlights-card ul.cards li {
+  background-color: #323632;
 }
 
 /* =============
