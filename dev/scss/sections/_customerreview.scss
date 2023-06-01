@@ -6,5 +6,19 @@
 
     background-color: $light-green;
     color: $beige;
-    
+
+    margin: 150px;
+    padding: 40px 60px;
+    border-radius: 10px;
+
+    h2{
+        font-size: 27px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 22px;
+        text-align: center;
+    }
 }

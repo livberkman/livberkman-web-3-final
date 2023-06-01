@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-h1, h2, h3, button {
+h1, h2, h3, h4, h5, button {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
@@ -391,6 +391,21 @@ textarea {
 /* =============
     Navigation
 ============= */
+.navigation {
+  background-color: #323632;
+  list-style-type: none;
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation .logo {
+  width: 50px;
+}
+.navigation .icons {
+  float: right;
+  padding: 5px;
+}
+
 /* =============
     Header
 ============= */
@@ -400,27 +415,19 @@ textarea {
 .footer {
   background-color: #323632;
   color: #E2DCCF;
+  text-align: center;
+  padding: 20px;
 }
-
-/* =============
-    Top Navigation
-============= */
-.topnavigation {
-  background-color: #323632;
-  list-style-type: none;
+.footer h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  padding: 10px;
 }
-
-li {
-  display: inline-block;
+.footer h5 {
+  padding: 10px;
 }
-
-.logo {
-  width: 50px;
-}
-
-.icons {
-  float: right;
-  padding: 5px;
+.footer img {
+  margin: 10px;
 }
 
 /* =============
@@ -447,25 +454,15 @@ li {
 .product {
   background-color: #7F8570;
   color: #E2DCCF;
-  padding: 20px;
+  padding: 60px;
 }
-.product img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.product .sawselections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 25px auto;
 }
-.product h2 {
-  padding: 10px;
-}
-
-.addtocart button {
-  background-color: #874D3A;
-  color: #E2DCCF;
-  border-style: none;
-  text-transform: uppercase;
-}
-
-.sawselections button {
+.product .sawselections button {
   color: #E2DCCF;
   background-color: #7F8570;
   font-size: 22px;
@@ -475,52 +472,149 @@ li {
   border-radius: 10px;
   border-width: 5px;
 }
+.product .addtocart {
+  margin: 25px auto;
+}
+.product .addtocart button {
+  background-color: #874D3A;
+  color: #E2DCCF;
+  font-size: 32px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px 20px;
+}
 
 /* =============
     Highlights Card
 ============= */
+.highlights-card {
+  margin: 100px 20px 100px 20px;
+}
 @media (min-width: 768px) {
   .highlights-card {
-    margin: 30px 0 40px 0;
-  }
-}
-@media (min-width: 1200px) {
-  .highlights-card {
-    margin: 50px 0 60px 0;
+    margin: 150px 40px 150px 40px;
   }
 }
 .highlights-card ul.cards {
   list-style: none;
   padding-left: 0;
+  display: grid;
   grid-template-columns: 100%;
-  gap: 15px;
+  gap: 75px;
+}
+@media (min-width: 768px) {
+  .highlights-card ul.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .highlights-card ul.cards li {
   background-color: #323632;
+  border-radius: 10px;
+}
+.highlights-card ul.cards li .container h1 {
+  color: #E2DCCF;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.highlights-card ul.cards li .container img {
+  max-width: 100%;
 }
 
 /* =============
     Details
 ============= */
+@media (min-width: 768px) {
+  .details {
+    column-count: 2;
+    margin: 50px 20px 100px 20px;
+  }
+}
+
 /* =============
     Gallery
 ============= */
-.gallery {
+.gallery .galleryimages {
   background-color: #7F8570;
+}
+@media (min-width: 768px) {
+  .gallery .galleryimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.buynowbutton button {
+  background-color: #874D3A;
+  display: flex;
   color: #E2DCCF;
+  font-size: 32px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px 20px;
+  margin: 50px auto 150px;
 }
 
 /* =============
     How to Use
 ============= */
+@media (min-width: 768px) {
+  .howtouse {
+    column-count: 2;
+    margin: 50px 20px 100px 20px;
+  }
+}
+
 /* =============
     Customer Review
 ============= */
 .customerreview {
   background-color: #7F8570;
   color: #E2DCCF;
+  margin: 150px;
+  padding: 40px 60px;
+  border-radius: 10px;
+}
+.customerreview h2 {
+  font-size: 27px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.customerreview h3 {
+  font-size: 22px;
+  text-align: center;
 }
 
 /* =============
     Tool Info
 ============= */
+@media (min-width: 768px) {
+  .toolcare .maintenence {
+    column-count: 2;
+    margin: 50px 20px 100px 20px;
+  }
+}
+@media (min-width: 768px) {
+  .toolcare .sharpening {
+    column-count: 2;
+    margin: 50px 20px 100px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .materials {
+    column-count: 2;
+    margin: 50px 20px 100px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .guarantee {
+    column-count: 2;
+    margin: 50px 20px 100px 20px;
+  }
+}

@@ -2,10 +2,34 @@
     Gallery
 ============= */
 
-
 .gallery{
 
-    background-color: $light-green;
-    color: $beige;
+    .galleryimages{
+        background-color: $light-green;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+.buynowbutton{
     
+    button{
+            
+        background-color: $rust;
+            
+        display: flex;
+    
+        color: $beige;
+        font-size: 32px;
+        text-transform: uppercase;
+    
+        border-radius: 10px;
+        border-style: none;
+        
+        padding: 10px 20px;
+        margin: 50px auto 150px;
+    }
 }

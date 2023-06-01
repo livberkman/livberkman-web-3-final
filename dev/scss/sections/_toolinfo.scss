@@ -1,3 +1,35 @@
 /* =============
     Tool Info
 ============= */
+
+.toolcare{
+
+    .maintenence{
+        @include md{
+            column-count:2;
+            margin: 50px 20px 100px 20px;
+        }
+    }
+    .sharpening{
+        @include md{
+            column-count:2;
+            margin: 50px 20px 100px 20px;
+        }
+    }
+}
+
+.materials{
+
+    @include md{
+        column-count:2;
+        margin: 50px 20px 100px 20px;
+    }
+}
+
+.guarantee{
+
+    @include md{
+        column-count:2;
+        margin: 50px 20px 100px 20px;
+    }
+}

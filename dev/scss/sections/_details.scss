@@ -1,3 +1,11 @@
 /* =============
     Details
 ============= */
+
+.details{
+
+    @include md{
+        column-count:2;
+        margin: 50px 20px 100px 20px;
+    }
+}

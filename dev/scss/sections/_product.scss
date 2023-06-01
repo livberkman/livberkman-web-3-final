@@ -7,41 +7,46 @@
     background-color: $light-green;
     color: $beige;
 
-    padding: 20px;
-
-    img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    padding: 60px;
+    
+    .sawselections{
+    
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 25px auto;
+    
+        button{
+            
+            color: $beige;
+    
+            background-color: $light-green;
+            font-size: 22px;
+            text-align: center;
+    
+            border-style: solid;
+            border-color: $beige;
+            border-radius: 10px;
+            border-width: 5px;
+        }
     }
 
-    h2{
-        padding: 10px;
-    }
-}
+    .addtocart{
 
-.addtocart{
+        margin: 25px auto;
 
-    button{
+        button{
+    
+            background-color: $rust;
+    
+            color: $beige;
+            font-size: 32px;
+            text-transform: uppercase;
+    
+            border-radius: 10px;
+            border-style: none;
 
-        background-color: $rust;
-        color: $beige;
-        border-style: none;
-        text-transform: uppercase;
-    }
-}
-
-.sawselections{
-
-    button{
-
-        color: $beige;
-        background-color: $light-green;
-        font-size: 22px;
-        text-align: center;
-        border-style: solid;
-        border-color: $beige;
-        border-radius: 10px;
-        border-width: 5px;
+            padding: 10px 20px;
+        }
     }
 }
