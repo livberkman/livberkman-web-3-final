@@ -348,6 +348,7 @@ template {
 
 body {
   color: #323632;
+  background-color: #EEEDEA;
 }
 
 /* =============
@@ -391,24 +392,25 @@ textarea {
 /* =============
     Navigation
 ============= */
-.navigation {
+/* =============
+    Header
+============= */
+.header {
   background-color: #323632;
   list-style-type: none;
+  padding: 5px 0 5px 0;
 }
-.navigation li {
+.header li {
   display: inline-block;
 }
-.navigation .logo {
-  width: 50px;
+.header .logo {
+  width: 30px;
 }
-.navigation .icons {
+.header .icons img {
   float: right;
   padding: 5px;
 }
 
-/* =============
-    Header
-============= */
 /* =============
     Footer
 ============= */
@@ -445,7 +447,7 @@ textarea {
   color: #E2DCCF;
   text-align: center;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 20px 60px 20px;
 }
 
 /* =============
@@ -454,46 +456,94 @@ textarea {
 .product {
   background-color: #7F8570;
   color: #E2DCCF;
-  padding: 60px;
+  padding: 60px 35px 60px;
+}
+@media (min-width: 768px) {
+  .product {
+    display: grid;
+    grid-template-areas: "leftproduct rightproduct";
+    grid-template-columns: 1fr 1fr;
+  }
+  .product .leftproduct {
+    grid-area: leftproduct;
+  }
+  .product .rightproduct {
+    grid-area: rightproduct;
+  }
+}
+.product img {
+  width: 100%;
 }
 .product .sawselections {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  margin: 25px auto;
+  margin: 35px auto;
 }
 .product .sawselections button {
   color: #E2DCCF;
   background-color: #7F8570;
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
   border-style: solid;
   border-color: #E2DCCF;
   border-radius: 10px;
-  border-width: 5px;
+  border-width: 4px;
 }
-.product .addtocart {
-  margin: 25px auto;
+.product .productdetails {
+  margin: 15px 0 15px;
 }
 .product .addtocart button {
   background-color: #874D3A;
   color: #E2DCCF;
-  font-size: 32px;
+  font-size: 27px;
   text-transform: uppercase;
   border-radius: 10px;
   border-style: none;
-  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+}
+.product .quantity button {
+  background-color: #874D3A;
+  color: #E2DCCF;
+  font-size: 27px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border-style: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px 30px;
 }
 
 /* =============
     Highlights Card
 ============= */
-.highlights-card {
-  margin: 100px 20px 100px 20px;
-}
 @media (min-width: 768px) {
   .highlights-card {
-    margin: 150px 40px 150px 40px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .highlights-card {
+    padding: 15px 15px 15px 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .highlights-card {
+    grid-template-columns: auto 1140px auto;
+    padding: 223px 15px 15px 223px;
+  }
+}
+@media (min-width: 1400px) {
+  .highlights-card {
+    grid-template-columns: auto 1320px auto;
   }
 }
 .highlights-card ul.cards {
@@ -501,7 +551,7 @@ textarea {
   padding-left: 0;
   display: grid;
   grid-template-columns: 100%;
-  gap: 75px;
+  margin: 40px 0 40px 0;
 }
 @media (min-width: 768px) {
   .highlights-card ul.cards {
@@ -512,6 +562,7 @@ textarea {
 .highlights-card ul.cards li {
   background-color: #323632;
   border-radius: 10px;
+  margin: 35px;
 }
 .highlights-card ul.cards li .container h1 {
   color: #E2DCCF;
@@ -519,17 +570,37 @@ textarea {
   margin-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: middle;
 }
 .highlights-card ul.cards li .container img {
   max-width: 100%;
+  max-height: 100%;
+  padding-left: 0;
+}
+.highlights-card ul.cards li .container .cardtext {
+  padding: 20px;
+}
+@media (min-width: 1200px) {
+  .highlights-card ul.cards li .container {
+    grid-template-columns: 15px auto 15px;
+  }
 }
 
 /* =============
     Details
 ============= */
+.details {
+  margin: 25px;
+}
+.details h2 {
+  text-transform: uppercase;
+}
+.details p {
+  line-height: 29px;
+}
 @media (min-width: 768px) {
   .details {
-    column-count: 2;
+    column-count: 3;
     margin: 50px 20px 100px 20px;
   }
 }
@@ -537,14 +608,19 @@ textarea {
 /* =============
     Gallery
 ============= */
-.gallery .galleryimages {
+.gallery .mobile-galleryimages {
   background-color: #7F8570;
+  padding: 30px 10px;
 }
-@media (min-width: 768px) {
-  .gallery .galleryimages {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+.gallery .mobile-galleryimages img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding: 10px;
+}
+.gallery .desktop-galleryimages img {
+  display: none;
 }
 
 .buynowbutton button {
@@ -556,12 +632,21 @@ textarea {
   border-radius: 10px;
   border-style: none;
   padding: 10px 20px;
-  margin: 50px auto 150px;
+  margin: 20px auto 70px;
 }
 
 /* =============
     How to Use
 ============= */
+.howtouse {
+  margin: 0 25px 25px;
+}
+.howtouse h2 {
+  text-transform: uppercase;
+}
+.howtouse p {
+  line-height: 29px;
+}
 @media (min-width: 768px) {
   .howtouse {
     column-count: 2;
@@ -575,23 +660,35 @@ textarea {
 .customerreview {
   background-color: #7F8570;
   color: #E2DCCF;
-  margin: 150px;
-  padding: 40px 60px;
+  margin: 10%;
+  padding: 30px 20px 30px;
   border-radius: 10px;
+  text-align: center;
 }
 .customerreview h2 {
   font-size: 27px;
+  padding: 0 0 20px 0;
   text-transform: uppercase;
   text-align: center;
 }
 .customerreview h3 {
   font-size: 22px;
   text-align: center;
+  padding: 0 0 20px 0;
 }
 
 /* =============
     Tool Info
 ============= */
+.toolcare {
+  margin: 40px 25px;
+}
+.toolcare h2 {
+  text-transform: uppercase;
+}
+.toolcare p {
+  line-height: 29px;
+}
 @media (min-width: 768px) {
   .toolcare .maintenence {
     column-count: 2;
@@ -605,6 +702,15 @@ textarea {
   }
 }
 
+.materials {
+  margin: 40px 25px;
+}
+.materials h2 {
+  text-transform: uppercase;
+}
+.materials p {
+  line-height: 29px;
+}
 @media (min-width: 768px) {
   .materials {
     column-count: 2;
@@ -612,6 +718,15 @@ textarea {
   }
 }
 
+.guarantee {
+  margin: 40px 25px;
+}
+.guarantee h2 {
+  text-transform: uppercase;
+}
+.guarantee p {
+  line-height: 29px;
+}
 @media (min-width: 768px) {
   .guarantee {
     column-count: 2;

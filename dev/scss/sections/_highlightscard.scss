@@ -4,19 +4,34 @@
 
 .highlights-card{
 
-    margin: 100px 20px 100px 20px;
-
     @include md{
-        margin: 150px 40px 150px 40px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+
+    @include lg{
+        padding: 15px 15px 15px 15px;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1140px auto;
+        padding: 223px 15px 15px 223px;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1320px auto;
     }
 
     ul.cards{
+
         list-style: none;
         padding-left: 0;
 
         display: grid;
         grid-template-columns: 100%;
-        gap: 75px;
+        margin: 40px 0 40px 0;
 
         @include md{
             display: grid; 
@@ -28,6 +43,8 @@
             background-color: $dark-green;
             border-radius: 10px;
 
+            margin: 35px;
+
             .container{
 
                 h1{
@@ -36,10 +53,21 @@
                     margin-bottom: 10px;
                     text-transform: uppercase;
                     text-align: center;
+                    vertical-align: middle;
                 }
 
                 img{
                     max-width: 100%;
+                    max-height: 100%;
+                    padding-left: 0;
+                }
+
+                .cardtext{
+                    padding: 20px;
+                }
+
+                @include xl{
+                    grid-template-columns: 15px auto 15px;
                 }
             }
         }

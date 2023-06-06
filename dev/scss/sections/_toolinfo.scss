@@ -4,14 +4,29 @@
 
 .toolcare{
 
+    margin: 40px 25px;
+
+    h2{
+        text-transform: uppercase;
+    }
+
+    p{
+        line-height: 29px;
+    }
+
     .maintenence{
+
         @include md{
+            
             column-count:2;
             margin: 50px 20px 100px 20px;
         }
     }
+
     .sharpening{
+
         @include md{
+
             column-count:2;
             margin: 50px 20px 100px 20px;
         }
@@ -20,7 +35,18 @@
 
 .materials{
 
+    margin: 40px 25px;
+
+    h2{
+        text-transform: uppercase;
+    }
+
+    p{
+        line-height: 29px;
+    }
+
     @include md{
+
         column-count:2;
         margin: 50px 20px 100px 20px;
     }
@@ -28,7 +54,18 @@
 
 .guarantee{
 
+    margin: 40px 25px;
+
+    h2{
+        text-transform: uppercase;
+    }
+
+    p{
+        line-height: 29px;
+    }
+
     @include md{
+
         column-count:2;
         margin: 50px 20px 100px 20px;
     }

@@ -4,18 +4,32 @@
 
 .gallery{
 
-    .galleryimages{
-        background-color: $light-green;
+    .mobile-galleryimages{
 
-        @include md{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        background-color: $light-green;
+        padding: 30px 10px;
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            width: 75%;
+            padding: 10px;
+        }
+    }
+
+    .desktop-galleryimages{
+
+        img{
+
+            display: none;
         }
     }
 }
 
 .buynowbutton{
-    
+
     button{
             
         background-color: $rust;
@@ -30,6 +44,6 @@
         border-style: none;
         
         padding: 10px 20px;
-        margin: 50px auto 150px;
+        margin: 20px auto 70px;
     }
 }

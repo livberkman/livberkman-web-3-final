@@ -2,3 +2,25 @@
     Header
 ============= */
 
+.header{
+
+    background-color: $dark-green;
+    list-style-type: none;
+    padding: 5px 0 5px 0;
+
+    li{
+        display: inline-block;
+    }
+
+    .logo{
+        width: 30px;
+    }
+    
+    .icons{
+
+        img{
+            float: right;
+            padding: 5px;
+        }
+    }
+}

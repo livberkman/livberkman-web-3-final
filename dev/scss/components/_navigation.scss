@@ -1,22 +1,3 @@
 /* =============
     Navigation
 ============= */
-
-.navigation{
-
-    background-color: $dark-green;
-    list-style-type: none;
-
-    li{
-        display: inline-block;
-    }
-
-    .logo{
-        width: 50px;
-    }
-    
-    .icons{
-        float: right;
-        padding: 5px;
-    }
-}

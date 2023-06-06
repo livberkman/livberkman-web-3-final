@@ -4,6 +4,16 @@
 
 .howtouse{
 
+    margin: 0 25px 25px;
+
+    h2{
+        text-transform: uppercase;
+    }
+
+    p{
+        line-height: 29px;
+    }
+
     @include md{
         column-count:2;
         margin: 50px 20px 100px 20px;

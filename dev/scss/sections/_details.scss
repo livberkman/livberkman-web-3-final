@@ -4,8 +4,20 @@
 
 .details{
 
+    margin: 25px;
+
+    h2{
+        text-transform: uppercase;
+    }
+
+    p{
+        line-height: 29px;
+    }
+
     @include md{
-        column-count:2;
+        column-count: 3;
         margin: 50px 20px 100px 20px;
+    
+        
     }
 }
