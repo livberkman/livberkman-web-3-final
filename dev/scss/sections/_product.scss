@@ -8,24 +8,23 @@
     color: $beige;
 
     padding: 60px 35px 60px;
-    
+
     @include md{
+        padding: 80px;
+        gap: 40px;
 
         display: grid;
-        grid-template-areas: "leftproduct rightproduct";
         grid-template-columns: 1fr 1fr;
-
-        .leftproduct{
-            grid-area: leftproduct;
-        }
-
-        .rightproduct{
-            grid-area: rightproduct;
-        }
     }
 
     img{
+        
         width: 100%;
+    }
+
+    .productdetails{
+
+        margin: 15px 0 15px;
     }
     
     .sawselections{
@@ -48,11 +47,6 @@
             border-radius: 10px;
             border-width: 4px;
         }
-    }
-
-    .productdetails{
-
-        margin: 15px 0 15px;
     }
 
     .addtocart{
@@ -96,3 +90,4 @@
         }
     }
 }
+

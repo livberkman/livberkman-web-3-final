@@ -6,8 +6,66 @@
 
     background-color: $grey;
     color: $dark-green;
-    
+    border-radius: 10px;
+
+    margin: 40px;
+    padding: 20px;
+
     h3{
         text-transform: uppercase;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid $dark-green;
+    }
+
+    .categories{
+        text-transform: uppercase;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid $dark-green;
+        columns: 3;
+    }
+
+    .cartcontents{
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid $dark-green;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'cc-1 cc-2 cc-3';
+        
+        .cc-1{
+            grid-area: cc-1;
+        }
+
+        .cc-2{
+            grid-area: cc-2;
+        }
+
+        .cc-3{
+            grid-area: cc-3;
+        }
+    }
+
+    .subtotals{
+        padding: 20px 0 20px 0;
+        text-transform: uppercase;
+        columns: 2;
+    }
+
+    .shipping{
+        text-transform: uppercase;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid $dark-green;
+        columns: 2;
+    }
+
+    .total{
+        padding: 20px 0 20px 0;
+        text-transform: uppercase;
+        columns: 2;
+    }
+
+    @include md{
+        float: right;
     }
 }

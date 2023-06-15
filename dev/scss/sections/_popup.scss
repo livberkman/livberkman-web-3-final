@@ -1,3 +1,57 @@
 /* =============
-    Tool Info
+    Pop Up
 ============= */
+
+.popup{
+
+    color: $beige;
+    background-color: $light-green;
+    margin: 40px;
+    padding: 20px;
+
+    border-radius: 10px;
+    text-align: center;
+
+    .x{
+        float: right;
+    }
+    
+    h2{
+        text-transform: uppercase;
+        padding: 40px 0 10px 0;
+    }
+
+    .estimated-delivery{
+        padding: 20px;
+    }
+
+    .confirmation{
+        padding: 20px 0;
+
+        h6{
+            font-family: cabin;
+            font-weight: regular;
+
+        }
+    }
+
+    button{
+    
+        background-color: $rust;
+
+        color: $beige;
+        text-transform: uppercase;
+
+        border-radius: 10px;
+        border-style: none;
+
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        padding: 10px 30px;
+
+        @include md{
+            font-size: 27px;
+        }
+    }
+}

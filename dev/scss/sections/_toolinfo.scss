@@ -4,41 +4,56 @@
 
 .toolcare{
 
-    margin: 40px 25px;
+    margin: 40px 25px 0 25px;
 
     h2{
         text-transform: uppercase;
+
+        @include md{
+            float: right;
+            padding: 0 40px 10px 0;
+        }
     }
 
     p{
         line-height: 29px;
     }
 
-    .maintenence{
+    @include md{
+        gap: 40px;
+        padding: 0 50px 0 50px;
 
-        @include md{
-            
-            column-count:2;
-            margin: 50px 20px 100px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'ct-1 ct-2 ct-3';
+        
+        .ct-1{
+            grid-area: ct-1;
+            border-right: 1px solid $dark-green;
         }
-    }
 
-    .sharpening{
+        .ct-2{
+            grid-area: ct-2;
+        }
 
-        @include md{
-
-            column-count:2;
-            margin: 50px 20px 100px 20px;
+        .ct-3{
+            grid-area: ct-3;
         }
     }
 }
 
 .materials{
 
-    margin: 40px 25px;
+    margin: 40px 25px 0 25px;
 
     h2{
         text-transform: uppercase;
+
+        @include md{
+            float: right;
+            padding: 0 40px;
+        }
     }
 
     p{
@@ -46,18 +61,36 @@
     }
 
     @include md{
+        gap: 40px;
+        padding: 0 50px 0 50px;
 
-        column-count:2;
-        margin: 50px 20px 100px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'cm-1 cm-2 .';
+        
+        .cm-1{
+            grid-area: cm-1;
+            border-right: 1px solid $dark-green;
+        }
+
+        .cm-2{
+            grid-area: cm-2;
+        }
     }
 }
 
 .guarantee{
 
-    margin: 40px 25px;
+    margin: 40px 25px 0 25px;
 
     h2{
         text-transform: uppercase;
+
+        @include md{
+            float: right;
+            padding: 0 40px;
+        }
     }
 
     p{
@@ -65,8 +98,21 @@
     }
 
     @include md{
+        gap: 40px;
+        padding: 0 50px 50px;
 
-        column-count:2;
-        margin: 50px 20px 100px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'cg-1 cg-2 .';
+        
+        .cg-1{
+            grid-area: cg-1;
+            border-right: 1px solid $dark-green;
+        }
+
+        .cg-2{
+            grid-area: cg-2;
+        }
     }
 }

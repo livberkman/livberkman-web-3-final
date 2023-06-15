@@ -4,10 +4,15 @@
 
 .howtouse{
 
-    margin: 0 25px 25px;
+    margin: 40px 25px 0 25px;
 
     h2{
         text-transform: uppercase;
+
+        @include md{
+            float: right;
+            padding: 0 40px;
+        }
     }
 
     p{
@@ -15,7 +20,26 @@
     }
 
     @include md{
-        column-count:2;
-        margin: 50px 20px 100px 20px;
+        gap: 40px;
+        padding: 0 50px 50px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'ch-1 ch-2 ch-3';
+        
+        .ch-1{
+            grid-area: ch-1;
+            border-right: 1px solid $dark-green;
+        }
+
+        .ch-2{
+            grid-area: ch-2;
+        }
+
+        .ch-3{
+            grid-area: ch-3;
+        }
     }
 }
+

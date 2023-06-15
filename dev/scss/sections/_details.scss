@@ -4,10 +4,15 @@
 
 .details{
 
-    margin: 25px;
+    margin: 40px 25px;
 
     h2{
         text-transform: uppercase;
+
+        @include md{
+            float: right;
+            padding: 0 40px;
+        }
     }
 
     p{
@@ -15,9 +20,25 @@
     }
 
     @include md{
-        column-count: 3;
-        margin: 50px 20px 100px 20px;
-    
+        gap: 40px;
+        padding: 0 50px 50px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'c-1 c-2 c-3';
         
+        .c-1{
+            grid-area: c-1;
+            border-right: 1px solid $dark-green;
+        }
+
+        .c-2{
+            grid-area: c-2;
+        }
+
+        .c-3{
+            grid-area: c-3;
+        }
     }
 }

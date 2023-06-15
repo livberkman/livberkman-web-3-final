@@ -1,3 +1,19 @@
 /* =============
-    Tool Info
+    Title
 ============= */
+
+.title{
+
+    margin: 40px;
+    border-bottom: 1px solid $dark-green;
+    
+    @include md{
+        border-width: 50%;
+        float: left;
+    }
+
+    h2{
+        text-transform: uppercase;
+        padding: 0 0 20px 0;
+    }
+}
